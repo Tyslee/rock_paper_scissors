@@ -1,1 +1,1 @@
-A simple rock paper scissors game to be played in the console. Creating this to apply basic javascript skills.
+A simple rock paper scissors game originally to be played in the console, updated to have UI. Creating this to apply basic javascript skills.

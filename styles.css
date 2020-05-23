@@ -1,0 +1,43 @@
+button{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius:10px;
+}
+
+#buttonContain{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+}
+
+#choseRock{
+    color: white;
+    background-color:#653321;
+}
+
+#chosePaper{
+    background-color: white;
+    border: solid;
+}
+
+#choseScissors{
+    background-color: silver;
+}
+
+#container{
+    width: 50%;
+    height: 90px;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}

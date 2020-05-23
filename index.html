@@ -1,84 +1,17 @@
-<script>
+<head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div id="container"></div>
 
-    const options = ["ROCK", "PAPER", "SCISSORS"]
-
-    function computerPlay(){
-        let temp = Math.random() * 3;
-
-        if(temp < 1){
-            return "ROCK"
-        }
-        else if(temp < 2){
-            return "PAPER"
-        }
-        else{
-            return "SCISSORS"
-        }
-    }
-
-    function playRound(playerSelection, computerSelection){
-        if(playerSelection == computerSelection){
-
-            console.log("You tie! You both chose " + playerSelection + "1")
-            return 0
-        }
-        else if((playerSelection == "PAPER" && computerSelection == "ROCK")
-            || (playerSelection == "SCISSORS" && computerSelection == "PAPER")
-            || (playerSelection == "ROCK" && computerSelection == "SCISSORS")){
-
-                console.log("You win this round! " + playerSelection + " beats " + computerSelection + "!")
-                return 1
-        }
-        else{
-
-            console.log("You lose this round! " + computerSelection + " beats " + playerSelection + "!")
-            return 2
-        }
-    }
-
-    function takeChoice(){
-        
-        let iter = 0
-        while(true){
-
-            if(!iter){
-                var temp = prompt("Enter a choice").toUpperCase()
-            }
-            else{
-                var temp = prompt("Invalid input, try again").toUpperCase()
-            }
-
-            if(options.includes(temp)){
-               return temp;
-            }
-            iter = 1;
-        }
-    }
-
-    function game(){
-        let playerWin = 0;
-        let compWin = 0;
-
-        while((playerWin != 3) && (compWin != 3)){
-            let choice = takeChoice()
-            let compChoice = computerPlay()
-            let result = playRound(choice, compChoice)
-
-            if(result == 1){
-                playerWin++
-            }
-            else if(result == 2){
-                compWin++
-            }
-        }
-
-        if(playerWin == 3){
-            console.log("You Win!")
-        }
-        else{
-            console.log("You Lose")
-        }
-    }
+    <div id= "buttonContain">
+        <button id="choseRock">ROCK</button>
+        <button id="chosePaper">PAPER</button>
+        <button id="choseScissors">SCISSORS</button>
+    </div>
     
-    game()
+</body>
+<script type="text/javascript", src="button.js">
 </script>
